@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fan 360 Walkthrough</title>
+<meta name="description" content="A Fan 360 walkthrough on Databricks, shown on synthetic data.">
+<meta property="og:title" content="Fan 360 Walkthrough">
+<meta property="og:description" content="A Fan 360 walkthrough on Databricks, shown on synthetic data.">
+<meta property="og:image" content="poster.jpg">
+<style>
+  :root { --blue: #0072CE; --navy: #003B71; --sky: #4FA8E8; --ink: #ffffff; }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    min-height: 100vh; display: flex; flex-direction: column; align-items: center;
+    background: linear-gradient(135deg, var(--blue) 0%, var(--navy) 100%);
+    color: var(--ink); font-family: 'Segoe UI', 'Open Sans', Helvetica, Arial, sans-serif;
+    padding: 48px 16px;
+  }
+  header { width: 100%; max-width: 1200px; margin-bottom: 28px; }
+  .label { color: var(--sky); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: 14px; }
+  h1 { font-size: clamp(28px, 5vw, 48px); font-weight: 700; line-height: 1.1; margin-top: 10px; }
+  .player { width: 100%; max-width: 1200px; border-radius: 12px; overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .35); background: #000; }
+  video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; }
+  p { width: 100%; max-width: 1200px; margin-top: 20px; font-size: 16px; line-height: 1.5; opacity: .85; }
+  .cta { width: 100%; max-width: 1200px; margin-top: 24px; }
+  .cta a { display: inline-block; background: #fff; color: var(--blue); font-weight: 700; text-decoration: none;
+    padding: 14px 24px; border-radius: 8px; font-size: 17px; }
+  .cta a:hover, .cta a:focus-visible { background: #E6F1FB; outline: 2px solid #fff; outline-offset: 2px; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="label">Resultant</div>
+    <h1>Fan 360 Walkthrough</h1>
+  </header>
+  <div class="player">
+    <video controls playsinline preload="metadata" poster="poster.jpg">
+      <source src="fan360-walkthrough.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="cta"><a href="https://bvinsonrez.github.io/fan-360-generic-demo/" target="_blank" rel="noopener">Try the interactive demo &rarr;</a></div>
+  <p>Built on Databricks. The demo runs on synthetic data. The results at the end come from a real client engagement.</p>
+</body>
+</html>
